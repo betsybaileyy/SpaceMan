@@ -1,7 +1,6 @@
 import random
 
 guess_name = []
-
 correct_guesses = []
 wrong_guesses = []
 letters_guessed = [correct_guesses, wrong_guesses]
@@ -13,10 +12,10 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 # Creating a list of names to choose from at random.
 def load_name():
-    name_list = ["Betsy", "Bailey", "Margaux", "Caesar",
-    "Katie", "Joey", "Peyton", "Will", "Bess", "Elliot",
-     "Anna", "Chris", "Alan", "Phyllis", "Justin", "Faith",
-     "Novan", "Jasmine"]
+    name_list = ["betsy", "bailey", "margaux", "caesar",
+    "katie", "joey", "peyton", "will", "bess", "elliot",
+     "anna", "chris", "alan", "phyllis", "justin", "faith",
+     "novan", "jasmine"]
     secret_name = random.choice(name_list)
     return secret_name
 
@@ -68,7 +67,8 @@ def is_name_guessed():
                             print(guess_name)
 
                     if not '-' in guess_name:
-                        print("Congratulations! You have completed your mission. Treat yourself.")
+                        print("Congratulations! You have completed your mission. Mars will have to wait another day..")
+                        print("Treat yourself!!!!!")
 
             # If the guessed letter is not in the secret name, add it to a list of wrong guesses. Add it to list of incorrectly guessed letters.
                 else:
