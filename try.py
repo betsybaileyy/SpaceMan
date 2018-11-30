@@ -30,11 +30,6 @@ def word_space():
     print("this word has " + str(len(name)) + " characters in it.")
     print(guess_name)
 
-    # word_space = "-" * (len(name))
-    # word_space = []
-    # return list(word_space)
-
-
 def is_word_guessed():
     incorrect_guesses = 10
     while incorrect_guesses > 0:
@@ -47,15 +42,9 @@ def is_word_guessed():
                 print("That letter has already been guessed. Please enter a new character.")
             else:
                 letters_guessed.append(guess)
-            # word_space = word_space()
                 if guess.lower() in name:
-
                     print("Yes! " + guess + " is in the word. Good job.")
-
                     correct_guesses.append(guess)
-                    # guessed_value = name_character_list.index(word_space)
-                    # word_space[name.index(letter)] = letter
-                    # new_progress = ""
 
                     for i in range(0, len(name)):
                         if name[i] == guess:
@@ -63,16 +52,7 @@ def is_word_guessed():
                             print(guess_name)
                         if not '-' in guess_name:
                             print("Congratulations! You have completed your mission. Treat yourself.")
-                    #         new_progress += wordspace()
-                    #
-                    # new_progress = wordspace()
 
-
-
-    	    # for dashes in word_space:
-    	    #     print(word_space)
-            #
-            #     dashes(name.index(letter))
                 else:
                     wrong_guesses.append(guess)
                     print( guess + " is not in the sercret name")
@@ -89,9 +69,3 @@ def user_standing():
 user_standing()
 word_space()
 is_word_guessed()
-
-
-
-
-    # secret_word = load_word()
-# spaceman(load_word())
